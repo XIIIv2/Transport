@@ -9,17 +9,16 @@ import icu.xiii.transport.Transport;
 public class Client {
 
     public void run() {
-        // Я может неправильно понял задачу, но мне показалось, что типы надо указывать конкретно Car и Plane, надеюсь оценку не испорчу.
-
-        //Transport car = new CarFactory()
-        Car car = new CarFactory()
+        Transport car = new CarFactory()
                 .createTransport();
 
-        //Transport plane = new PlaneFactory()
-        Plane plane = new PlaneFactory()
-                .createTransport();
-
+        System.out.println("car is instance of " + car.getClass().getSimpleName());
         car.move();
+
+        Transport plane = new PlaneFactory()
+                .createTransport();
+
+        System.out.println("plane is instance of " + plane.getClass().getSimpleName());
         plane.move();
     }
 }

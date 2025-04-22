@@ -10,8 +10,7 @@ public class CarFactory extends TransportFactory {
      * @return new instance of Car
      */
     @Override
-    //public Transport createTransport()
-    public Car createTransport() {
+    public Transport createTransport() {
         return new Car();
     }
 }
