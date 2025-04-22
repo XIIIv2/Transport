@@ -11,6 +11,7 @@ public class PlaneFactory extends TransportFactory {
      */
     @Override
     public Transport createTransport() {
+        System.out.println("Plane factory creating new instance");
         return new Plane();
     }
 }

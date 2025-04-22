@@ -11,6 +11,7 @@ public class CarFactory extends TransportFactory {
      */
     @Override
     public Transport createTransport() {
+        System.out.println("Car factory creating new instance");
         return new Car();
     }
 }
