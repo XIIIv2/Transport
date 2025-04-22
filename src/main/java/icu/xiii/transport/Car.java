@@ -6,6 +6,7 @@ public class Car implements Transport {
         System.out.println("Car instance created.");
     }
 
+    @Override
     public void move() {
         System.out.println("Car::move()");
     }

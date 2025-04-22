@@ -6,6 +6,7 @@ public class Plane implements Transport {
         System.out.println("Plane instance created.");
     }
 
+    @Override
     public void move() {
         System.out.println("Plane::move()");
     }
